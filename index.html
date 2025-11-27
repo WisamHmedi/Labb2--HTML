@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#19599e, #323b44);
+            margin: 0;
+            padding: 10px;
+            border: 20px solid #b5b5b5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            }
+
+            .wrapper {
+                text-align: center;
+                margin-top: 40px;
+                width: 600px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .panel {
+                 background: #f2f2f2;
+                 padding: 30px 50px;
+                 border-radius: 8px;
+                }
+                 .row {
+                    margin-bottom: 15px;
+                    display: flex;
+                     align-items: center;
+                    }
+
+            label {
+                width: 100px;
+                font-size: 14px;
+             }
+
+            .textfield {
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #b5b5b5;
+                border-radius: 4px;
+                background-color: #f9f9f9;
+            }
+
+            .checkbox {
+                width: 20px;
+                height: 20px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background: #e0e0e0;
+                border: 1px solid #b5b5b5;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #d8d8d8;
+            }
+
+            #resultBox {
+                margin-top: 20px;
+                padding: 15px;
+                border: 1px solid #b5b5b5;
+                background: #f9f9f9;
+                height: 40px;
+            }
+
+            </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+    <h1>Labb 2 - grupp 30</h1>
+
+    <div class="pandel">
+        <div class="row">
+            <label for="color">Färg</label>
+            <input type="text" id="color" name="color" class="textfield">
+            </div>
+
+        <div class="row">
+            <label for="content">Innehåll</label>
+            <input type="text" id="content" name="content" class="textfield">
+            </div>
+
+        <div class="row">
+            <label for="divstyle">Stil på box</label>
+            <input type="checkbox" id="divstyle" name="divstyle" class="checkbox">
+            </div>
+
+        <div class="row">
+            <button id="removeBtn">Ta bort</button>
+            </div>
+
+            <div id="resultBox"></div>
+        </div>
+</body>
+</html>
